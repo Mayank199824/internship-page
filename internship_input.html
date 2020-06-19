@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Admin Apply Form</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet" type="text/css">
+  <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet" type="text/css">
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+</head>
+<style>
+  textarea {
+  border: none;
+  border: 2px solid grey;
+  width: 100%;
+  height: 100px;
+}
+</style>
+<body>
+  <h1 style="text-align: center;"> Post an internship </h1>
+  <h6 style="text-align: center;"> Need assistance? Please visit <a href="#">Help Center</a></h6>
+	<div id="dashboard" class="container">
+      <br>
+      <form class="form-container" action="resume.html" method="POST">
+      <h3 style="text-align: left;">Company Details</h3>
+      <div class="row">
+          <div class="col-sm-6 form-group">
+            <label>Company Name </label>
+            <input type="text" class="form-control" id="company_name" placeholder="Enter Company Name " name="Company_name" required>
+          </div>
+          <div class="col-sm-6 form-group">
+            <label>Company Logo</label>
+            <input type="url" class="form-control" id="company_url" placeholder="Enter Company URL Logo" name="company_url" required>
+          </div>
+      </div>
+      <br>
+      <div class="row">
+          <div class="col-sm-12 form-group">
+            <label>Location of work</label>
+            <input type="text" class="form-control" id="location_work" placeholder="Enter location of work" name="location_work">
+          </div>
+      </div>
+      <br>
+      <h3 style="text-align: left;">Internship Details</h3>
+      <div class="row">
+        <div class="col-sm-6 form-group">
+            <label>Internship Course Name </label>
+            <input type="text" class="form-control" id="course_name" placeholder="eg. web development" name="course_name" required>
+        </div>
+        <div class="col-sm-6 form-group">
+            <label>Internship Type</label>
+            <input type="text" class="form-control" id="internship_type" placeholder="eg. Regular/work from home" name="internship_type" required>
+          </div>
+      </div>
+      <br>
+      <label>Duration </label><br>
+      <p style="color: #696969;">Shorter the duration,more the applications</p>
+      <div class="row">
+            <div class="col-sm-9 form-group">
+              <input type="text" class="form-control" id="duration_number" placeholder="Enter Duration" name="duration_number">
+            </div>
+            <div class="col-sm-2 form-group">
+                <select class="form-control">
+                  <option value="None" class="form-control" selected>-- Select --</option>
+                  <option value="week" class="form-control">week</option>
+                  <option value="month" class="form-control">month</option>
+                  <option value="year" class="form-control">year</option>
+                </select>
+            </div>
+      </div>
+      <br>
+      <div class="row">
+          <div class="col-sm-6 form-group">
+            <label>Start Date</label><br>
+            <input type="radio" id="immediate" name="start_date" value="immediate">
+            <label for="immediate">Immediate</label>
+            <span style="margin-right: 30px;"></span>
+            <input type="radio" id="later" name="start_date" value="later">
+            <label for="later">Later</label>
+          </div>
+          <div class="col-sm-6 form-group">
+            <label>Apply Date</label>
+            <input type="date" class="form-control" id="apply_date" placeholder="Enter Apply Date" name="apply_date" required>
+          </div>
+      </div>
+      <br>
+      <div class="row">
+          <div class="col-sm-6 form-group">
+            <label>City/Cities(Optional)</label>
+            <input type="text" class="form-control" id="city" placeholder="city name where you provide internship" name="city">
+          </div>
+          <div class="col-sm-6 form-group">
+            <label>Number of Openings</label>
+            <input type="number" class="form-control" id="number_of_openings" placeholder="Eg: 4" name="number_of_openings" required>
+          </div>
+      </div>
+      <br>
+      <h3 style="text-align: left;">Stipend & Perks</h3>
+      <div class="row">
+          <div class="col-sm-12 form-group">
+            <label>Stipend</label><br>
+            <input type="radio" id="fixed" name="stipend" value="fixed">
+            <label for="fixed">Fixed</label>
+            <span style="margin-right: 30px;"></span>
+            <input type="radio" id="performed_based" name="stipend" value="performed based">
+            <label for="performed_based">Performed based</label>
+            <span style="margin-right: 30px;"></span>
+            <input type="radio" id="unpaid" name="stipend" value="unpaid">
+            <label for="unpaid">Unpaid</label>
+          </div>
+      </div>
+          <div class="row">
+            <div class="col-md-1 form-group">
+              <select class="form-control">
+                  <option value="rs" class="form-control" selected>₹</option>
+                  <option value="dollar" class="form-control">$</option>
+              </select>
+            </div>
+            <div class="col-md-4">
+              <input type="text" class="form-control" id="duration_number" placeholder="eg. 10000" name="duration_number">
+            </div>
+            <div class="col-md-3 form-group">
+              <select class="form-control">
+                  <option value="None" class="form-control" selected>-- Select --</option>
+                  <option value="week" class="form-control">week</option>
+                  <option value="month" class="form-control">month</option>
+                  <option value="year" class="form-control">year</option>
+              </select>
+            </div>
+          </div>
+      <br>
+      <label> Perk(optional) </label>
+      <div class="row">
+        <div class="col-sm-6 form-group">
+            <div class="form-check">
+              <input type="checkbox" class="form-check-input" id="certificate">
+              <label class="form-check-label" for="certificate"> Certificate </label>
+            </div>
+            <div class="form-check">
+              <input type="checkbox" class="form-check-input" id="flexible_work_hours">
+              <label class="form-check-label" for="flexible_work_hours"> Flexible work hours </label>
+            </div>
+            <div class="form-check">
+              <input type="checkbox" class="form-check-input" id="informal_dress_code">
+              <label class="form-check-label" for="informal_dress_code"> Informal dress code </label>
+            </div>
+        </div>
+        <div class="col-sm-6 form-group">
+          <div class="form-check">
+              <input type="checkbox" class="form-check-input" id="letter_of_recommendation">
+              <label class="form-check-label" for="letter_of_recommendation"> Letter of recommendation </label>
+            </div>
+            <div class="form-check">
+              <input type="checkbox" class="form-check-input" id="5_days_a_week">
+              <label class="form-check-label" for="5_days_a_week"> 5 days a week </label>
+            </div>
+            <div class="form-check">
+              <input type="checkbox" class="form-check-input" id="free_snacks_&_beverages">
+              <label class="form-check-label" for="free_snacks_&_beverages"> Free snacks & beverages </label>
+            </div>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-sm-12 form-group">
+          <div class="custom-control custom-switch">
+            <input type="checkbox" class="custom-control-input" id="customSwitches">
+            <label class="custom-control-label" for="customSwitches">Does this internship come with a pre-placement offer(PPO)?
+              <p>(optional)</p>
+            </label>
+          </div>
+        </div>
+      </div>
+      <br>
+      <h3 style="text-align: left;">Skills & Assessment</h3>
+      <div class="row">
+        <div class="col-sm-12">
+          <label>Skills required (otional) </label>
+          <input type="text" class="form-control" id="skills" placeholder="eg. Java" name="skills">
+        </div>
+        <div class="col-sm-12">
+          <br>
+          <label>Assessment</label>
+          <p style="color: #696969;">Question 1 & 2 wiil be asked to every applicant by default.If you wish,you may ask two more customized questions.</p>
+          <b>Qusetion 1</b><p>Why should you be hired for this role?</p><br>
+          <b>Question 2</b><p>Are you available for 1 month,starting immediately,for a full time internship at ?If not,what is the time period you are available for the earliest date you can start this internship on? </p>
+            <div id="dynamicInput">
+              
+            </div>
+            <input type="button" value="Add another question" onClick="addInput('dynamicInput');">
+        </div>
+      </div>
+      <br>
+      <div class="row">
+        <div class="col-md-12 form-group" style="text-align: center;">
+          <input type="submit" value="Save Draft" class="btn btn-primary" onclick="form_submit()"> 
+          <input type="submit" value="Post Internship" class="btn btn-primary" onclick="form_submit()"> 
+        </div>
+      </div>
+    </form>
+</div>
+</body>
+<!--javascript file-->
+<script src="apply_form.js"></script>
+<!-- Jquery -->
+<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+    integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+<!-- PopperJs -->
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+    integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+<!-- Bootstrap JS -->
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"
+    integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous"></script>
+</html>

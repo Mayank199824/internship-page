@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Student Apply_Form</title>
+    <link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet" type="text/css">
+    <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet" type="text/css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+</head>
+
+<style>
+  table, th, td {
+    border: 1px solid black;
+    border-collapse: collapse;
+    text-align: center;
+  }
+  th, td { 
+    text-align: center;  
+  }
+</style>
+
+<body>
+    <div class="container">
+        <h1 style="text-align: center;">Fill Out This Form</h1><br>
+        <div class="PersonalInfo" id="perso">
+            <h2>Personal Information</h2>
+            <div class="row">
+                <div class="col-md-6">
+                   <label><b>First-Name:</b></label></br>
+                   <input type="text" class="form-control" id="f_name" plclass="form-control"aceholder="first-Name" required ><br>
+                   <label><b>Email:</b></label></br>
+                   <input type="text" class="form-control" id="email" placeholder="email" required /><br>
+                   <label><b>Phone_No:</b></label></br>
+                   <input type="text" class="form-control" id="phone" placeholder="phone_no" required /><br>
+                   <label><b>Current CGPA</b></label></br>
+                   <input type="number" class="form-control" id="current_cgpa" placeholder="Enter current CGPA" required /><br>
+                   <label><b>Certifications</b></label></br>
+                   <input type="url" class="form-control" id="certification" placeholder="Cetification (if any)"><br>
+                </div>
+                <div class="col-md-6">
+                   <label><b>Last-Name:</b></label></br>
+                   <input type="text" class="form-control" id="l_name" placeholder="last-Name" required /><br>
+                   <label><b>Address:</b></label></br>
+                   <input type="address" class="form-control" id="address" placeholder="address" required /><br>
+                   <label><b>College Name</b></label></br>
+                   <input type="text" class="form-control" id="college_name" placeholder="Enter college name" required /><br>
+                   <label><b>Past Experience</b></label></br>
+                   <input type="text" class="form-control" id="past_experience" placeholder="Past experience(if any)"><br>
+                   <label><b>Project</b></label></br>
+                   <input type="text" class="form-control" id="project" placeholder="Working on project (if any)"><br>
+                </div>
+            </div>
+            <br>
+            <div class="row">
+                <div class="col-md-12">
+                    <label><b>Skills</b></label></br>
+                    <input type="text" class="form-control" id="skill" placeholder="Enter skill"><br>
+                </div>
+            </div>
+            <br>
+            <div class="row">
+                <div class="col-md-12">
+                    <h2>Objective</h2>
+                    <textarea id="object" cols="100" rows="4" placeholder="Short and engaging pitch about yourself"></textarea>
+                </div>
+            </div>
+            <br>
+            <div class="row">
+                <div class="col-md-12">
+                    <h2>Qualification</h2>
+                    <table id="myTable">
+                        <div class="col-md-3">
+                            <tr>
+                                <th>Class</th>
+                                <th>Year of Passing</th>
+                                <th>Board/University</th>
+                                <th>Percentage(%)</th>
+                            </tr>
+                        </div>
+                        <div class="col-md-4">
+                            <tr>
+                                <td id="class1"><b>10<sup>th</sup></b></td>
+                                <td><input type="text" class="table_input" id="year1" placeholder="Enter passing year"/></td>
+                                <td><input type="text" class="table_input1" id="bu1" placeholder="Enter B/U Name"/></td>
+                                <td><input type="text" class="table_input" id="per1" placeholder="Enter Percentage"/></td>
+                            </tr>
+                        </div>
+                        <div class="col-md-4">
+                            <tr>
+                                <td><b>12<sup>th</sup></b></td>
+                                <td><input type="text" class="table_input" id="year2" placeholder="Enter passing year"/></td>
+                                <td><input type="text" class="table_input1" id="bu2" placeholder="Enter B/U Name"/></td>
+                                <td><input type="text" class="table_input" id="per2" placeholder="Enter Percentage"/></td>
+                            </tr>
+                        </div>
+                        <div class="col-md-4">
+                            <tr>
+                                <td><b>Graduation</b></td>
+                                <td><input type="text" class="table_input" id="year3" placeholder="Enter passing year"/></td>
+                                <td><input type="text" class="table_input1" id="bu3" placeholder="Enter B/U Name"/></td>
+                                <td><input type="text" class="table_input" id="per3" placeholder="Enter Percentage"/></td>
+                            </tr>
+                        </div>
+                        <div class="col-md-4">
+                            <tr>
+                                <td><b>Post Graduation</b></td>
+                                <td><input type="text" class="table_input" id="year4" placeholder="Enter passing year"/></td>
+                                <td><input type="text" class="table_input1" id="bu4" placeholder="Enter B/U Name"/></td>
+                                <td><input type="text" class="table_input" id="per4" placeholder="Enter Percentage"/></td>
+                            </tr>
+                        </div>
+                    </table>
+                </div>
+            </div>
+            <br>
+            <div class="row">
+                <div class="col-md-12">
+                    <h2>Experience</h2>
+                    <textarea name="" id="expert" cols="100" rows="4" placeholder="Write about your experience"></textarea>
+                    <hr></hr><br>
+                    <h2>Technical-Skill</h2>
+                    <textarea name="" id="skill" cols="100" rows="4" placeholder="Write about your skills"></textarea>
+                </div>                
+            </div>
+            <br><br>
+            <div class="row">
+                <div class="col-md-12 form-group" style="text-align: center;"> 
+                    <input type="submit" value="Submit" class="btn btn-primary" onclick="form_submit()"> 
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
